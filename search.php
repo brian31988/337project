@@ -12,45 +12,61 @@
   <li role="presentation"><a href="index.html">Home</a></li>
   <li role="presentation"><a href="aboutus.html">About Us</a></li>
   <li role="presentation"><a href="contactus.html">Contact Us</a></li>
-  <li role="presentation"><a href="search.html">Search</a></li>
-  <li role="presentation" class="active"><a href="login.html">Login</a></li>
-
+  <li role="presentation"class="active"><a href="search.html">Search</a></li>
+  <li role="presentation"><a href="login.php">Login</a></li>
 </ul>
 <br>
         </div>
+
 <div class="container">
     <div class="jumbotron">
   <div class="row">
     <div class="col-12 text-center">
-
             <h1>Marstons</h1>
-           <h2>Login Page</h2>
+           <h2>Search</h2>
            </div>
         </div>
         </div>
         </div>
 
+
+
+
+
+
 <div class="container">
      <div class="row">
   <div class="col-xs-12">
-    <div class="panel panel-primary">
-  <div class="panel-heading">Enter your information:</div>
+  <table class="table table-striped">
+<thead>
+      <tr>
+        <th>Search Inventory</th>
+      </tr>
+    </thead>
+    <tbody>
+      <div class="search">
 
-  <div class="panel-body"><center>
-    <form action="login.php">
-      <b>Username: </b><input type="text" name="username">
-      <br><b>Password: </b><input type="password" name="psw">
-    </br>
-  <input type="submit" value="Login"></form></center></div><br>
+		<form action=" "/>
+		<input type="text" name="search" placeholer="Enter Keyword Here..."/>
+		<input type="submit" value="Search Here"/>
+		</form>
+	</div>
+
+
 </div></div>
+</div>
+</div>
+</div>
+</div>
 
 </div>
 </div>
+
 <style>p {
     padding: 25px 50px;
 }
-
 body {
     background-color: #b0c4de;
 }
+
 </style>
