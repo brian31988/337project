@@ -14,7 +14,7 @@
   <li role="presentation"><a href="contactus.html">Contact Us</a></li>
   <li role="presentation"class="active"><a href="search.html">Search</a></li>
   <li role="presentation"><a href="login.php">Login</a></li>
-</ul>
+<li role="presentation"><a href="register.php">Register</a></li></ul>
 <br>
         </div>
 
