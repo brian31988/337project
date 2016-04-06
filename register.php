@@ -119,6 +119,7 @@
   <li role="presentation"><a href="aboutus.html">About Us</a></li>
   <li role="presentation"><a href="contactus.html">Contact Us</a></li>
   <li role="presentation"><a href="search.php">Search</a></li>
+  <li role="presentation"><a href="shopping-cart.php">View Cart</a></li>
   <li role="presentation"><a href="login.php">Login</a></li>
 <li role="presentation" class="active"><a href="register.php">Register</a></li>
 
