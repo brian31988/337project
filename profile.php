@@ -39,7 +39,7 @@ session_start();
 <?php
 
 if (is_null($_SESSION['CUS_USERNAME'])) {
-  header("Location: index.html");
+  header("Location: login.php");
   return;
 }
 
