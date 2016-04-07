@@ -16,8 +16,9 @@ session_start();
   <li role="presentation"><a href="index.html">Home</a></li>
   <li role="presentation"><a href="aboutus.html">About Us</a></li>
   <li role="presentation"><a href="contactus.html">Contact Us</a></li>
-  <li role="presentation"class="active"><a href="search.php">Search</a></li>
+  <li role="presentation"><a href="search.php">Search</a></li>
   <li role="presentation"><a href="shopping-cart.php">View Cart</a></li>
+  <li role="presentation"class="active"><a href="profile.php">Profile</a></li>
   <li role="presentation"><a href="login.php">Login</a></li>
 <li role="presentation"><a href="register.php">Register</a></li></ul>
 <br>
@@ -43,33 +44,33 @@ if (is_null($_SESSION['CUS_USERNAME'])) {
 
 $user = $_SESSION['CUS_USERNAME'];
 
+
 echo "
-  <table>
+  <table height ='200' width = '475'>
     <tbody>
       <tr>
-        <td>Name:</td>
+        <td><b>Name:</b></td>
         <td>" . $user['CUS_FNAME'] . " " . $user['CUS_LNAME'] . "</td>
       </tr>
       <tr>
-        <td>Username:</td>
+        <td><b>Username:</b></td>
         <td>" . $user['CUS_USERNAME'] . "</td>
       </tr>
       <tr>
-        <td>Phone Number:</td>
+        <td><b>Phone Number:</b></td>
         <td>" . $user['CUS_PHONE'] . "</td>
       </tr>
       <tr>
-        <td>Email:</td>
+        <td><b>Email:</b></td>
         <td>" . $user['CUS_EMAIL'] . "</td>
       </tr>
       <tr>
-        <td>Address:</td>
+        <td><b>Address:</b></td>
         <td>" . $user['CUS_STREET'] . " " . $user['CUS_CITY'] . ", " . $user['CUS_STATE'] . " " . $user['CUS_ZIP'] . "</td>
       </tr>
     </tbody>
   </table>
 ";
-
 ?>
 
 <style>p {

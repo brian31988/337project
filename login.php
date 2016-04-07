@@ -1,14 +1,11 @@
 <?php 
     require("databaseconnect.php"); 
+	session_start();
     $submitted_username = ''; 
     if(!empty($_POST)){ 
         $query = " 
             SELECT 
-                CUS_ID, 
-                CUS_USERNAME, 
-                CUS_PASS, 
-                CUS_SALT, 
-                CUS_EMAIL 
+                *				
             FROM customer 
             WHERE 
                 CUS_USERNAME = :CUS_USERNAME
@@ -65,6 +62,7 @@
   <li role="presentation"><a href="contactus.html">Contact Us</a></li>
   <li role="presentation"><a href="search.php">Search</a></li>
   <li role="presentation"><a href="shopping-cart.php">View Cart</a></li>
+  <li role="presentation"><a href="profile.php">Profile</a></li>
   <li role="presentation" class="active"><a href="login.php">Login</a></li><li role="presentation"><a href="register.php">Register</a></li>
 
 </ul>

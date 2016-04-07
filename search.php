@@ -18,6 +18,7 @@ session_start();
   <li role="presentation"><a href="contactus.html">Contact Us</a></li>
   <li role="presentation"class="active"><a href="search.php">Search</a></li>
   <li role="presentation"><a href="shopping-cart.php">View Cart</a></li>
+  <li role="presentation"><a href="profile.php">Profile</a></li>
   <li role="presentation"><a href="login.php">Login</a></li>
 <li role="presentation"><a href="register.php">Register</a></li></ul>
 <br>
