@@ -35,7 +35,7 @@
             unset($row['CUS_SALT']); 
             unset($row['CUS_PASS']); 
             $_SESSION['CUS_USERNAME'] = $row;  
-            header("Location: search.php"); 
+            header("Location: profile.php"); 
             die("Redirecting to: login.php"); 
         } 
         else{ 
