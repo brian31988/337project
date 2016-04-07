@@ -28,6 +28,7 @@ session_start();
     <div class="jumbotron">
   <div class="row">
     <div class="col-12 text-center">
+        <img src="marstons.png" height="250" width="250" style="float:left">
             <h1>Marstons</h1>
            <h2>Search</h2>
            </div>
@@ -104,12 +105,19 @@ session_start();
 </div></div>
 </div>
 </div>
-
-<style>p {
+<footer> Mastons Depratment Store 2015</footer>
+<style>
+    p {
     padding: 25px 50px;
 }
 body {
-    background-color: #b0c4de;
+ background-image: url(shopping.jpeg);
+      background-color:lightgray;
+    
 }
-
+footer{
+        font-weight:bold;
+        color:black;
+        text-align:center;
+    }
 </style>
