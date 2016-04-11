@@ -67,7 +67,7 @@
 
 </ul>
 <br>
-        </div>
+</div>
 <div class="container">
     <div class="jumbotron">
   <div class="row">
@@ -99,8 +99,14 @@
 <style>p {
     padding: 25px 50px;
 }
-
 body {
-    background-color: #b0c4de;
+     background-image: url(shopping.jpeg);
+          background-color:lightgray;
+   
 }
+footer{
+        font-weight:bold;
+        color:black;
+        text-align:center;
+    }
 </style>

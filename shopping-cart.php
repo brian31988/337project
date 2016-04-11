@@ -29,6 +29,7 @@ session_start();
   <div class="row">
     <div class="col-12 text-center">
         <img src="marstons.png" height="250" width="250" style="float:left">
+		<img src="marstons.png" height="250" width="250" style="float:right">
             <h1>Marstons</h1>
            <h2>cart</h2>
            </div>
