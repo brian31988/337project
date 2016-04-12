@@ -37,12 +37,6 @@ session_start();
         </div>
         </div>
 
-<div class="coupon">
-<div class="photo">
-    <p> Something just for you</p>
-    </div>
-</div>
-
 <div class="container">
      <div class="row">
   <div class="col-xs-12">
@@ -116,23 +110,8 @@ body {
     background-color:lightgray;
    
 }
-div.coupon{
- background-image:url(coupons.png);   
-}
-    .photo{
-        background-color:#ffffff;
-        border:1px solid black;
-        opacity: 0.6;
-        filter:alpha(opacity=50);
-        margin:300px;
-        
-    }
-    .photo p {
-        margin:15%;
-        font-weight:bold;
-        color:#000000;
-        font-size: 50px;
-    }
+
+
 footer{
         font-weight:bold;
         color:black;
