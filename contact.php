@@ -1,25 +1,10 @@
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<?php
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+$page = "contact";
+include 'header.php';
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+echo '
 
-<div class="container">
-<ul class="nav nav-tabs">
-  <li role="presentation"><a href="index.html">Home</a></li>
-  <li role="presentation"><a href="aboutus.html">About Us</a></li>
-  <li role="presentation" class="active"><a href="contactus.html">Contact Us</a></li>
-  <li role="presentation"><a href="search.php">Search</a></li>
-  <li role="presentation"><a href="shopping-cart.php">View Cart</a></li>
-  <li role="presentation"><a href="profile.php">Profile</a></li>
-  <li role="presentation"><a href="login.php">Login</a></li>
-  <li role="presentation"><a href="register.php">Register</a></li>
-</ul>
-<br>
-        </div>
 <div class="container">
     <div class="jumbotron">
   <div class="row">
@@ -40,19 +25,19 @@
   <div class="panel-heading">How to reach us</div>
 
 
-  <div class="panel-body">  
+  <div class="panel-body">
       <h3> Customer Service Hours: Mon-Fri 9am-5pm EST</h3>
       <p> <b> Email Us:</b> CustomerSupport@marstons.com</p>
       <p> No time to wait?</p>
       <p> <b> Call Us:</b>1800-MARSTONS</p>
       <p><b>Corporate Offices</b><br> Martstons Direct Inquiries<br>1234 Third Avenue, Suite 1234<br>Detroit, MI 48201</p>
 
-  <div class="panel-body"> <img src="contactus.jpg" style="float:right">  
-  
+  <div class="panel-body"> <img src="contactus.jpg" style="float:right">
+
   <p><font size = "4">Customer Service Hours: Mon-Fri 9am-5pm EST<br><br>
 
 Email Us: CustomerSupport@marstons.com<br>
-We'll get back to you within 24 hours. <br><br>
+We\'ll get back to you within 24 hours. <br><br>
 
 No time to wait? <br><br>
 
@@ -79,11 +64,18 @@ Detroit, MI 48201</font></p>
 	body {
        background-image: url(shopping.jpeg);
           background-color:lightgray;
-   
+
 }
     footer{
         font-weight:bold;
         color:black;
         text-align:center;
     }
+.nav-tabs{
+  background-color:#f0f0f0;
+}
 </style>
+
+';
+
+?>

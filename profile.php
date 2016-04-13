@@ -1,28 +1,7 @@
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-<?php require("databaseconnect.php");
-session_start();
+<?php
+$page = "profile";
+include 'header.php';
 ?>
-
-<div class="container">
-<ul class="nav nav-tabs">
-  <li role="presentation"><a href="index.html">Home</a></li>
-  <li role="presentation"><a href="aboutus.html">About Us</a></li>
-  <li role="presentation"><a href="contactus.html">Contact Us</a></li>
-  <li role="presentation"><a href="search.php">Search</a></li>
-  <li role="presentation"><a href="shopping-cart.php">View Cart</a></li>
-  <li role="presentation"class="active"><a href="profile.php">Profile</a></li>
-  <li role="presentation"><a href="login.php">Login</a></li>
-<li role="presentation"><a href="register.php">Register</a></li></ul>
-<br>
-</div>
 
 <div class="container">
   <div class="jumbotron">
@@ -36,6 +15,13 @@ session_start();
     </div>
   </div>
 </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Profile</div>
+          <div class="panel-body">
 
 <?php
 
@@ -74,6 +60,12 @@ echo "
   </table>
 ";
 ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <footer> Mastons Depratment Store 2015</footer>
 <style>p {
     padding: 25px 50px;
@@ -81,11 +73,15 @@ echo "
 body {
      background-image: url(shopping.jpeg);
           background-color:lightgray;
-   
+
 }
 footer{
         font-weight:bold;
         color:black;
         text-align:center;
     }
+    .nav-tabs{
+      background-color:#f0f0f0;
+    }
+
 </style>

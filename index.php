@@ -1,33 +1,17 @@
-<!-- Latest compiled and minified CSS -->
-<link rel="style" href="styles.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<?php
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+$page = "home";
+include 'header.php';
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+echo '
 
-<div class="container">
-<ul class="nav nav-tabs">
-  <li role="presentation" class="active"><a href="index.html">Home</a></li>
-  <li role="presentation"><a href="aboutus.html">About Us</a></li>
-  <li role="presentation"><a href="contactus.html">Contact Us</a></li>
-  <li role="presentation"><a href="search.php">Search</a></li>
-  <li role="presentation"><a href="shopping-cart.php">View Cart</a></li>
-  <li role="presentation"><a href="profile.php">Profile</a></li>
-  <li role="presentation"><a href="login.php">Login</a></li>
-  <li role="presentation"><a href="register.php">Register</a></li>
-</ul>
-<br>
-        </div>
 <div class="container">
     <div class="jumbotron">
   <div class="row">
     <div class="col-12 text-center">
 
             <h1>Marstons</h1>
-           
+
            </div>
         </div>
         </div>
@@ -53,7 +37,7 @@
 </div>
 
 </div>
- 
+
 
 <footer> Mastons Depratment Store 2015</footer>
 <style>p {
@@ -63,13 +47,13 @@
 body {
    background-image: url(shopping.jpeg);
           background-color:lightgray;
-   
+
 }
     .jumbotron{
         background-color:floralwhite;
         color:black;
     }
-   
+
     footer{
         font-weight:bold;
         color:black;
@@ -78,16 +62,16 @@ body {
     .image{
         background-image: url(clothes.png);
         border:2px solid #b0c4de;
-        
-       
+
+
     }
     .transbox{
         background-color:#ffffff;
         border:1px solid black;
-        opacity: 0.6;
+        opacity: 0.9;
         filter:alpha(opacity=60);
         margin:200px;
-        
+
     }
     .transbox p {
         margin:10%;
@@ -95,5 +79,14 @@ body {
         color:#000000;
         font-size: 50px;
     }
-   
+
+    .nav-tabs{
+      background-color:#f0f0f0;
+    }
+
+
 </style>
+
+';
+
+?>

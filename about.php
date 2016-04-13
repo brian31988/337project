@@ -1,24 +1,9 @@
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<?php
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+$page = "about";
+include 'header.php';
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-<div class="container">
-<ul class="nav nav-tabs">
-  <li role="presentation"><a href="index.html">Home</a></li>
-  <li role="presentation" class="active"><a href="aboutus.html">About Us</a></li>
-  <li role="presentation"><a href="contactus.html">Contact Us</a></li>
-  <li role="presentation"><a href="search.php">Search</a></li>
-  <li role="presentation"><a href="shopping-cart.php">View Cart</a></li>
-  <li role="presentation"><a href="profile.php">Profile</a></li>
-  <li role="presentation"><a href="login.php">Login</a></li>
-<li role="presentation"><a href="register.php">Register</a></li></ul>
-<br>
-       
+echo '
 
 <div class="container">
     <div class="jumbotron">
@@ -59,7 +44,7 @@
 			Timothy Miko<br>
 			Shaifali Sood</td>
       </tr>
-        
+
   </div><br>
 </div></div>
 
@@ -72,11 +57,20 @@
 body {
      background-image: url(shopping.jpeg);
     background-color:lightgray;
-    
+
 }
 footer{
         font-weight:bold;
         color:black;
         text-align:center;
     }
+
+    .nav-tabs{
+      background-color:#f0f0f0;
+    }
+
 </style>
+
+';
+
+?>
