@@ -1,8 +1,10 @@
 <?php
 
 require("databaseconnect.php");
-session_start();
 
+if(!isset($_SESSION)){
+session_start();
+}
 echo '
 
 <!-- Latest compiled and minified CSS -->
@@ -17,7 +19,7 @@ echo '
 
 ';
 
-$is_logged_in = is_null($_SESSION['CUS_USERNAME']) == false;
+$is_logged_in = isset($_SESSION['CUS_USERNAME']);
 
 echo '
 <div class="container">
