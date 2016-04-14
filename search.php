@@ -49,7 +49,7 @@ include 'header.php';
 		<input type="submit" value="Search" style="width: 200px; height: 35px; background-color: #1376b8; color: white; font-size: larger"/>
 		</form>
 	</div>
-<table border="7" bordercolor="#1376b8">
+<table border="7" bordercolor="#1376b8" align='center'>
 	<?php
 	if('searching'==true && isset($_REQUEST['searchcategory'])){
 

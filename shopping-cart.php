@@ -31,7 +31,7 @@ if(isset($_SESSION['cart']))
 {
 
 ?>
-<table border="7" bordercolor="#1376b8">
+<table border="7" bordercolor="#1376b8" align="center">
 	<?php
 
 		echo "<th bgcolor='#1376b8'><center><font size='5' color='white'><em>Name</em></font></th>
@@ -76,7 +76,7 @@ if(isset($_SESSION['cart']))
 <?php
 if(isset($_SESSION['cart'])){
 echo "<div class='container' >
-  <div class='row' style= 'width: 350px'>
+  <div class='row' style= 'width: 350px;'>
     <div class='col-xs-12'>
       <div class='panel panel-primary'>
         <div class='panel-heading'><center><font size=4>Total Price</font></center></div>
