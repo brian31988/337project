@@ -24,23 +24,32 @@ include 'header.php';
   <table class="table table-striped">
 <thead>
       <tr>
-        <th>Search Inventory by Department, Brand, Name, Color, or Price</th>
+        <th bgcolor="white" style="border-color: black"><center>Search by Department, Brand, Name, Color, or Price</center></th>
       </tr>
 	  <tr>
-	  <div align= "center">
-		<em><strong>Department List:</strong></em><br>Mens Shoes<br>Womens Shoes<br>Mens Clothing<br>Womens Clothing<br>
-		Accessories<br>Mens Cologne<br>Womens Fragrance
+	  <div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="panel panel-primary">
+        <div class="panel-heading"><center><font size=4>Search Categories</font></center></div>
+          <div class="panel-body">
+		<center><font size=3><em><strong>Department List:</strong></em><br>Mens Shoes<br>Womens Shoes<br>Mens Clothing<br>Womens Clothing<br>
+		Accessories<br>Mens Cologne<br>Womens Fragrance</font></center>
 		</div>
+      </div>
+    </div>
+  </div>
+</div>
 		</tr>
     <tbody>
-      <div class="search">
+      <div class="search" align="center">
 
 		<form action="search.php?searching=true" method="POST">
-		<input type="text" name="searchcategory" value=""/>
-		<input type="submit" value="Search"/>
+		<input type="text" name="searchcategory" value="" style="width: 200px; height: 35px"/>
+		<input type="submit" value="Search" style="width: 200px; height: 35px; background-color: #1376b8; color: white; font-size: larger"/>
 		</form>
 	</div>
-<table border="3" width="450" height ="200" cellpadding="10" cellspacing="10">
+<table border="7" bordercolor="#1376b8">
 	<?php
 	if('searching'==true && isset($_REQUEST['searchcategory'])){
 
@@ -53,12 +62,12 @@ include 'header.php';
 	OR ITEM_COLOR LIKE :category");
 
 		$sql->execute(array(':category'=> $_REQUEST['searchcategory']));
-		echo "<th><font size='4'><em>Name</em></font></th>
-			<th><em><font size='4'>Brand</em></font></th>
-			<th><em><font size='4'>Color</em></font></th>
-			<th><em><font size='4'>Department</em></font></th>
-			<th><em><font size='4'>Price</em></font></th>
-			<th><em><font size='4'>Action</em></font></th>";
+		echo "<th bgcolor='#1376b8'><center><font size='5' color='white'><em>Name</em></font></center></th>
+			<th bgcolor='#1376b8'><em><center><font size='5' color='white'>Brand</em></font></center></th>
+			<th bgcolor='#1376b8'><em><center><font size='5' color='white'>Color</em></font></center></th>
+			<th bgcolor='#1376b8'><em><center><font size='5' color='white'>Department</em></font></center></th>
+			<th bgcolor='#1376b8'><em><center><font size='5' color='white'>Price</em></font></center></th>
+			<th bgcolor='#1376b8'><em><center><font size='5' color='white'>Action</em></font></center></th>";
 
 
 	?>
@@ -68,12 +77,12 @@ include 'header.php';
 		?>
 
        <tr>
-				<td><font size='4'><?php echo $row['ITEM_NAME']?></font></td>
-				<td><font size='4'><?php echo $row['ITEM_BRAND']?></font></td>
-				<td><font size='4'><?php echo $row['ITEM_COLOR']?></font></td>
-				<td><font size='4'><?php echo $row['ITEM_DEPARTMENT']?></font></td>
-				<td><font size='4'><?php echo $row['ITEM_PRICE']?></font></td></td>
-				<td><a href="add-to-cart.php?id=<?php echo $row['ITEM_NUMBER'] ?>"><font size='4'>Add to cart</font></a></td>
+				<td bgcolor="#FFFFFF"> <center><font size='5'><?php echo $row['ITEM_NAME']?></font></center></td>
+				<td bgcolor="#FFFFFF"> <center><font size='5'><?php echo $row['ITEM_BRAND']?></font></center></td>
+				<td bgcolor="#FFFFFF"> <center><font size='5'><?php echo $row['ITEM_COLOR']?></font></center></td>
+				<td bgcolor="#FFFFFF"> <center><font size='5'><?php echo $row['ITEM_DEPARTMENT']?></font></center></td>
+				<td bgcolor="#FFFFFF"> <center><font size='5'><?php echo $row['ITEM_PRICE']?></font></center></td></td>
+				<td bgcolor="#FFFFFF"> <center><a href="add-to-cart.php?id=<?php echo $row['ITEM_NUMBER'] ?>"><font size='4'>Add to cart</font></a></center></td>
 			</tr>
     <?php
 	}

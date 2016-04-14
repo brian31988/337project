@@ -22,7 +22,7 @@ include 'header.php';
   <table class="table table-striped">
 <thead>
       <tr>
-        <th>Cart Items</th>
+        <th><font size='4'>Cart Items</font></th>
       </tr>
     </thead>
     <tbody>
@@ -31,14 +31,14 @@ if(isset($_SESSION['cart']))
 {
 
 ?>
-<table border="3" width="450" height ="200" cellpadding="10" cellspacing="10">
+<table border="7" bordercolor="#1376b8">
 	<?php
 
-		echo "<th><font size='4'><em>Name</em></font></th>
-			<th><em><font size='4'>Brand</em></font></th>
-			<th><em><font size='4'>Color</em></font></th>
-			<th><em><font size='4'>Department</em></font></th>
-			<th><em><font size='4'>Price</em></font></th>";
+		echo "<th bgcolor='#1376b8'><center><font size='5' color='white'><em>Name</em></font></th>
+			<th bgcolor='#1376b8'><center><font size='5' color='white'><em>Brand</em></font></th>
+			<th bgcolor='#1376b8'><center><font size='5' color='white'><em>Color</em></font></th>
+			<th bgcolor='#1376b8'><center><font size='5' color='white'><em>Department</em></font></th>
+			<th bgcolor='#1376b8'><center><font size='5' color='white'><em>Price</em></font></th>";
 
 
 	?>
@@ -55,11 +55,11 @@ if(isset($_SESSION['cart']))
 		$total += $row['ITEM_PRICE'];
 		?>
        <tr>
-				<td><font size='4'><?php echo $row['ITEM_NAME']?></font></td>
-				<td><font size='4'><?php echo $row['ITEM_BRAND']?></font></td>
-				<td><font size='4'><?php echo $row['ITEM_COLOR']?></font></td>
-				<td><font size='4'><?php echo $row['ITEM_DEPARTMENT']?></font></td>
-				<td><font size='4'><?php echo $row['ITEM_PRICE']?></font></td></td>
+				<td bgcolor="#FFFFFF"><center><font size='5'><?php echo $row['ITEM_NAME']?></font></center></td>
+				<td bgcolor="#FFFFFF"><center><font size='5'><?php echo $row['ITEM_BRAND']?></font></center></td>
+				<td bgcolor="#FFFFFF"><center><font size='5'><?php echo $row['ITEM_COLOR']?></font></center></td>
+				<td bgcolor="#FFFFFF"><center><font size='5'><?php echo $row['ITEM_DEPARTMENT']?></font></center></td>
+				<td bgcolor="#FFFFFF"><center><font size='5'><?php echo $row['ITEM_PRICE']?></font></center></td>
 			</tr>
     <?php
 	}
@@ -75,7 +75,18 @@ if(isset($_SESSION['cart']))
 <div align = "center">
 <?php
 if(isset($_SESSION['cart'])){
-echo "<p><font size ='5'>Total Price = " . $total . "</font></p>";
+echo "<div class='container' >
+  <div class='row' style= 'width: 350px'>
+    <div class='col-xs-12'>
+      <div class='panel panel-primary'>
+        <div class='panel-heading'><center><font size=4>Total Price</font></center></div>
+          <div class='panel-body'>
+		<p><font size ='5'>$" . $total . "</font></p>
+		</div>
+      </div>
+    </div>
+  </div>
+</div>";
 }
 ?>
 </div>

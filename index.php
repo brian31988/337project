@@ -20,7 +20,7 @@ echo '
 
 <div class="image">
 <div class="transbox">
-    <p> Looking for somthing? <br> Shop with us<br> Login and use the search box to view our invetory and prices </p>
+    <p> Looking for something? <br> Shop with us<br> Login and use the search box to view our inventory and prices </p>
     </div>
 <div class="container">
      <div class="row">
